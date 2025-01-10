@@ -76,7 +76,7 @@
     "lint-staged": "^15.3.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.2",
-    "unocss": "0.65.3",
+    "unocss": "65.4.0",
     "unplugin-icons": "^0.22.0",
     "unplugin-vue-components": "^0.28.0",
     "vite-plugin-pwa": "^0.21.1",
