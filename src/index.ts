@@ -219,8 +219,8 @@ export function generateExcelContent(content: Content): Uint8Array {
 
   const totalSize
     = zipData.reduce((acc, { header, compressedContent }) => acc + header.length + compressedContent.length, 0)
-    + centralDirectory.reduce((acc, header) => acc + header.length, 0)
-    + endOfCentralDirectory.length
+      + centralDirectory.reduce((acc, header) => acc + header.length, 0)
+      + endOfCentralDirectory.length
 
   // Create a single Uint8Array with the total size
   const result = new Uint8Array(totalSize)
