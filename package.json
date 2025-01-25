@@ -70,7 +70,7 @@
     "@stacksjs/eslint-config": "^3.13.1-beta.2",
     "@types/bun": "^1.1.17",
     "@vite-pwa/vitepress": "^0.5.3",
-    "bumpp": "^9.10.1",
+    "bumpp": "^10.0.1",
     "bun-plugin-dtsx": "^0.21.9",
     "changelogen": "^0.5.7",
     "lint-staged": "^15.4.1",
