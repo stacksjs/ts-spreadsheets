@@ -1,7 +1,9 @@
 antfu
+audiox
 biomejs
 booleanish
 bumpp
+bunfig
 bunx
 changelogen
 changelogithub
@@ -14,10 +16,13 @@ dbaeumer
 degit
 deps
 destructurable
+dnsx
 dtsx
 entrypoints
 heroicons
+httx
 iconify
+imgx
 lockb
 openweb
 outdir
@@ -27,11 +32,14 @@ prefetch
 preinstall
 quickfix
 shikijs
+shoutout
 socio
 softprops
 Solana
 Spatie
+sponsorware
 stacksjs
+tlsx
 twoslash
 typecheck
 unconfig
@@ -39,6 +47,7 @@ unocss
 unplugin
 unref
 upath
+vidx
 vite
 vitebook
 vitejs
