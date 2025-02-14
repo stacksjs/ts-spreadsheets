@@ -6,21 +6,21 @@
 <!-- [![npm downloads][npm-downloads-src]][npm-downloads-href] -->
 <!-- [![Codecov][codecov-src]][codecov-href] -->
 
-# Spreadsheets
+# ts-spreadsheets
 
 Easily generate spreadsheets, like CSVs and Excel files.
 
-## ☘️ Features
+## Features
 
 - Generate CSV & Excel files
 - Store spreadsheets to disk
 - Download spreadsheets as a Response object
 - Simple API for creating and manipulating spreadsheets
+- Performant & dependency-free
 - Library & CLI support
 - Fully typed
-- Lightweight & dependency-free
 
-## 🤖 Usage
+## Usage
 
 There are two ways to interact with `ts-spreadsheets`: via the CLI or as a library.
 
@@ -41,9 +41,9 @@ import { createSpreadsheet, spreadsheet } from 'ts-spreadsheets'
 const data = {
   headings: ['Name', 'Age', 'City'],
   data: [
-    ['John Doe', 30, 'Los Angeles'],
-    ['Jana Schmidt', 25, 'Berlin'],
-    ['Bob Johnson', 35, 'London']
+    ['Chris Breuer', 30, 'Playa Vista'],
+    ['Avery Hill', 25, 'Santa Monica'],
+    ['Danny Johnson', 35, 'San Francisco']
   ]
 }
 
@@ -215,9 +215,9 @@ The input json should follow this format:
 {
   "headings": ["Name", "Age", "City"],
   "data": [
-    ["John Doe", 30, "Los Angeles"],
-    ["Jana Schmidt", 25, "Berlin"],
-    ["Bob Johnson", 35, "London"]
+    ["Chris Breuer", 30, "Playa Vista"],
+    ["Avery Hill", 25, "Santa Monica"],
+    ["Danny Johnson", 35, "San Francisco"]
   ]
 }
 ```
@@ -244,21 +244,21 @@ spreadsheets convert --help
 spreadsheets validate --help
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 bun test
 ```
 
-## 📈 Changelog
+## Changelog
 
 Please see our [releases](https://github.com/stacksjs/stacks/releases) page for more information on what has changed recently.
 
-## 🚜 Contributing
+## Contributing
 
 Please review the [Contributing Guide](https://github.com/stacksjs/contributing) for details.
 
-## 🏝 Community
+## Community
 
 For help, discussion about best practices, or any other conversation that would benefit from being searchable:
 
@@ -268,14 +268,25 @@ For casual chit-chat with others using this package:
 
 [Join the Stacks Discord Server](https://discord.gg/stacksjs)
 
-## 🙏🏼 Credits
+## Postcardware
 
-Many thanks to the following core technologies & people who have contributed to this package:
+Two things are true: Stacks OSS will always stay open-source, and we do love to receive postcards from wherever Stacks is used! _We also publish them on our website._
+
+Our address: Stacks.js, 12665 Village Ln #2306, Playa Vista, CA 90094 🌎
+
+## Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Stacks development. If you are interested in becoming a sponsor, please reach out to us.
+
+- [JetBrains](https://www.jetbrains.com/)
+- [The Solana Foundation](https://solana.com/)
+
+## Credits
 
 - [Chris Breuer](https://github.com/chrisbbreuer)
 - [All Contributors](https://github.com/stacksjs/ts-spreadsheets/contributors)
 
-## 📄 License
+## License
 
 The MIT License (MIT). Please see [LICENSE](https://github.com/stacksjs/ts-spreadsheets/tree/main/LICENSE.md) for more information.
 
@@ -284,8 +295,8 @@ Made with 💙
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/ts-spreadsheets?style=flat-square
 [npm-version-href]: https://npmjs.com/package/ts-spreadsheets
-[github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/ts-starter/ci.yml?style=flat-square&branch=main
-[github-actions-href]: https://github.com/stacksjs/ts-starter/actions?query=workflow%3Aci
+[github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/ts-spreadsheets/ci.yml?style=flat-square&branch=main
+[github-actions-href]: https://github.com/stacksjs/ts-spreadsheets/actions?query=workflow%3Aci
 
-<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjs/ts-starter/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/stacksjs/ts-starter -->
+<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjs/ts-spreadsheets/main?style=flat-square
+[codecov-href]: https://codecov.io/gh/stacksjs/ts-spreadsheets -->
