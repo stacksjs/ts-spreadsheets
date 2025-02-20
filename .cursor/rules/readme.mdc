@@ -1,10 +1,8 @@
-<p align="center"><img src="https://github.com/stacksjs/ts-spreadsheets/blob/main/.github/art/cover.jpg" alt="Social Card of this Bun Spreadsheets repo"></p>
-
-[![npm version][npm-version-src]][npm-version-href]
-[![GitHub Actions][github-actions-src]][github-actions-href]
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-<!-- [![npm downloads][npm-downloads-src]][npm-downloads-href] -->
-<!-- [![Codecov][codecov-src]][codecov-href] -->
+---
+description: General information based on the latest ./README.md content
+globs: 
+---
+Update it if APIs change:
 
 # ts-spreadsheets
 
@@ -82,7 +80,7 @@ console.log('Excel Content:', rawExcelContent)
 
 #### spreadsheet(data: Content)
 
-Creates a spreadsheet object with various methods.
+Creates a spreadsheemethods.
 
 - `data`: An object containing `headings` and `data` for the spreadsheet.
 
@@ -150,9 +148,7 @@ Returns a SpreadsheetContent object.
 
 #### spreadsheet.generate(data: Content, options?: SpreadsheetOptions)
 
-Generates spreadsheet content based on the given data and options.
-
-- `data`: An object containing `headings` and `data` for the spreadsheet.
+Generates spreadsheet content based on the given data and o An object containing `headings` and `data` for the spreadsheet.
 - `options`: Optional. An object specifying the spreadsheet type ('csv' or 'excel').
 
 Returns a string or Uint8Array representing the spreadsheet content.
@@ -190,7 +186,7 @@ await spreadsheet(data).store('output.xlsx')
 await spreadsheet(data).generateExcel().store('output.xlsx')
 ```
 
-To view the full documentation, please visit [https://ts-spreadsheets.netlify.app](https://ts-spreadsheets.netlify.app).
+To view the full documentation, please visit [https://ts-spreadsheets.netlify.app](mdc:https:/ts-spreadsheets.netlify.app).
 
 ### CLI
 
@@ -243,60 +239,3 @@ spreadsheets create --help
 spreadsheets convert --help
 spreadsheets validate --help
 ```
-
-## Testing
-
-```bash
-bun test
-```
-
-## Changelog
-
-Please see our [releases](https://github.com/stacksjs/stacks/releases) page for more information on what has changed recently.
-
-## Contributing
-
-Please review the [Contributing Guide](https://github.com/stacksjs/contributing) for details.
-
-## Community
-
-For help, discussion about best practices, or any other conversation that would benefit from being searchable:
-
-[Discussions on GitHub](https://github.com/stacksjs/stacks/discussions)
-
-For casual chit-chat with others using this package:
-
-[Join the Stacks Discord Server](https://discord.gg/stacksjs)
-
-## Postcardware
-
-“Software that is free, but hopes for a postcard.” We love receiving postcards from around the world showing where `ts-spreadsheets` is being used! We showcase them on our website too.
-
-Our address: Stacks.js, 12665 Village Ln #2306, Playa Vista, CA 90094, United States 🌎
-
-## Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Stacks development. If you are interested in becoming a sponsor, please reach out to us.
-
-- [JetBrains](https://www.jetbrains.com/)
-- [The Solana Foundation](https://solana.com/)
-
-## Credits
-
-- [Chris Breuer](https://github.com/chrisbbreuer)
-- [All Contributors](https://github.com/stacksjs/ts-spreadsheets/contributors)
-
-## License
-
-The MIT License (MIT). Please see [LICENSE](https://github.com/stacksjs/ts-spreadsheets/tree/main/LICENSE.md) for more information.
-
-Made with 💙
-
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/ts-spreadsheets?style=flat-square
-[npm-version-href]: https://npmjs.com/package/ts-spreadsheets
-[github-actions-src]: https://img.shields.io/github/actions/workflow/status/stacksjs/ts-spreadsheets/ci.yml?style=flat-square&branch=main
-[github-actions-href]: https://github.com/stacksjs/ts-spreadsheets/actions?query=workflow%3Aci
-
-<!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjs/ts-spreadsheets/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/stacksjs/ts-spreadsheets -->

@@ -65,22 +65,16 @@
     "typecheck": "bun --bun tsc --noEmit"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.2.7",
-    "@shikijs/vitepress-twoslash": "^3.0.0",
+    "@stacksjs/docs": "^0.69.3",
     "@stacksjs/eslint-config": "^4.2.1-beta.1",
     "@types/bun": "^1.2.2",
-    "@vite-pwa/vitepress": "^0.5.3",
     "bumpp": "^10.0.3",
     "bun-plugin-dtsx": "^0.21.9",
     "changelogen": "^0.5.7",
     "lint-staged": "^15.4.3",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.3",
-    "unocss": "66.0.0",
-    "unplugin-icons": "^22.1.0",
-    "unplugin-vue-components": "^28.4.0",
-    "vite-plugin-pwa": "^0.21.1",
-    "vitepress": "^1.6.3"
+    "unocss": "66.0.0"
   },
   "overrides": {
     "unconfig": "0.3.10"
