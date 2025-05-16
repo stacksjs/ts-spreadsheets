@@ -67,14 +67,14 @@
   "devDependencies": {
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.2.1-beta.1",
-    "@types/bun": "^1.2.10",
-    "bumpp": "^10.1.0",
-    "bun-plugin-dtsx": "^0.21.9",
+    "@types/bun": "^1.2.13",
+    "bumpp": "^10.1.1",
+    "bun-plugin-dtsx": "^0.21.12",
     "changelogen": "^0.6.1",
-    "lint-staged": "^15.5.1",
-    "simple-git-hooks": "^2.12.1",
+    "lint-staged": "^15.5.2",
+    "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3",
-    "unocss": "66.0.0"
+    "unocss": "66.1.2"
   },
   "overrides": {
     "unconfig": "0.3.10"
