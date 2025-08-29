@@ -67,11 +67,11 @@
     "typecheck": "bun --bun tsc --noEmit"
   },
   "devDependencies": {
-    "@stacksjs/bumpx": "^0.1.20",
+    "@stacksjs/bumpx": "^0.1.29",
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.2.1-beta.1",
     "@stacksjs/gitlint": "^0.1.5",
-    "@stacksjs/logsmith": "^0.1.9",
+    "@stacksjs/logsmith": "^0.1.14",
     "@types/bun": "^1.2.21",
     "buddy-bot": "^0.8.10",
     "bun-git-hooks": "^0.2.19",
