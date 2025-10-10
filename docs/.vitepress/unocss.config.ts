@@ -25,7 +25,7 @@ export default defineConfig({
 
   theme: {
     colors: {
-      primary: '#3eaf7c',
+      primary: '#0A0ABC',
     },
 
     fontFamily: {
