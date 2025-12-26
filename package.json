@@ -78,7 +78,7 @@
     "bun-git-hooks": "^0.2.19",
     "bun-plugin-dtsx": "^0.21.17",
     "typescript": "^5.9.3",
-    "unocss": "66.5.10"
+    "unocss": "66.5.11"
   },
   "overrides": {
     "unconfig": "0.3.10"
