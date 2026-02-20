@@ -1,46 +1,40 @@
-name: CI
+name: Releaser
 
 on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
 
 jobs:
-  release:
-    name: Release
+  npm:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
         with:
           fetch-depth: 0
 
-      - name: Install Bun
+      - name: Setup Bun
         uses: oven-sh/setup-bun@v2
 
-      - name: Use Cached node_modules
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('**/bun.lock') }}
-          restore-keys: |
-            node-modules-
+      - name: Setup Pantry
+        uses: home-lang/pantry-setup@v1
 
       - name: Install Dependencies
         run: bun install
 
-      - name: Publish To npm
-        run: bun publish --access public
+      - name: Publish
+        run: pantry publish --npm --access public
         env:
-          BUN_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create GitHub Release
-        run: bunx changelogithub
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Attach Binaries
-        uses: softprops/action-gh-release@v2
+        uses: stacksjs/action-releaser@v1.2.9
         with:
           files: |
             bin/spreadsheets-linux-x64
