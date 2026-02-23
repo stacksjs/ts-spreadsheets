@@ -107,12 +107,14 @@ export function createSpreadsheet(data: Content, options: SpreadsheetOptions = {
   return new SpreadsheetWrapper(content, options.type || 'csv')
 }
 
+// eslint-disable-next-line pickier/no-unused-vars
 export function generateCSVContent(content: Content): string {
   const rows = [content.headings, ...content.data]
 
   return rows
     .map(row =>
       row
+        // eslint-disable-next-line pickier/no-unused-vars
         .map((cell) => {
           const cellString = String(cell)
           if (cellString.includes(',') || cellString.includes('"') || cellString.includes('\n')) {
