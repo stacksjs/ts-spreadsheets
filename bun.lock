@@ -450,7 +450,7 @@
 
     "@stacksjs/docs": ["@stacksjs/docs@0.70.23", "", { "dependencies": { "@iconify-json/carbon": "^1.2.8", "@shikijs/vitepress-twoslash": "^3.2.1", "@vite-pwa/assets-generator": "^1.0.0", "@vite-pwa/vitepress": "^1.0.0", "unocss": "^66.0.0", "unplugin-icons": "^22.1.0", "unplugin-vue-components": "^28.4.1", "vite-plugin-pwa": "^1.0.0", "vitepress": "1.6.3" } }, "sha512-kRk/aza/wQAAgF0fhUhG8bUHhqk3RnjBkZyoRW0fvYs3dLaAArJYX/uVquZixlQnqgizGeGZT986tEFjs5Ly+A=="],
 
-    "@stacksjs/dtsx": ["@stacksjs/dtsx@0.9.10", "", { "dependencies": { "@stacksjs/clapp": "^0.2.0" }, "peerDependencies": { "typescript": ">=5.9.3" }, "bin": { "dtsx": "./dist/bin/cli.js" } }, "sha512-7LRwOv8JSEEXDWIK+JrdcEN80wXrRLaiXz1Vvhe6hjAuzQSggEv0pSdZnq9Gx7OjhOotdRJLmHOBGJnnzoDRHQ=="],
+    "@stacksjs/dtsx": ["@stacksjs/dtsx@0.9.11", "", { "dependencies": { "@stacksjs/clapp": "^0.2.0" }, "peerDependencies": { "typescript": ">=5.9.3" }, "bin": { "dtsx": "./dist/bin/cli.js" } }, "sha512-8e5ZS359hstYkPGV5L93VpB8oDBy02SSbqwdp3yJXWoRT7gvK2qL8rW1hHJoecLMMQv+KACgxdjD4XLn8bFLYw=="],
 
     "@stacksjs/gitlint": ["@stacksjs/gitlint@0.1.5", "", { "bin": { "gitlint": "dist/bin/cli.js" } }, "sha512-5nSr6PN8/cRPdIz9Cj65Dh12N9gR7BPtJzR3rnqhAgpm5q0ihjmVTTybFQqigMcYuRpt2qX4HenV7YXuFOYScw=="],
 
@@ -648,7 +648,7 @@
 
     "bun-git-hooks": ["bun-git-hooks@0.3.1", "", { "bin": { "git-hooks": "dist/bin/cli.js", "bun-git-hooks": "dist/bin/cli.js" } }, "sha512-Xs/QUqIYgBmLHSVr5VBLVbM5lZbUoAXKX2WZyoQDb2LlzcxC3BpBvMkMTQH75UuOJZwaRBq8yEe4IR6NckqdgQ=="],
 
-    "bun-plugin-dtsx": ["bun-plugin-dtsx@0.9.10", "", { "dependencies": { "@stacksjs/dtsx": "0.9.10" } }, "sha512-ffbVq0QCZ3Ib1WbOUxescjT1khh0iO01DUhjvlpsqwp1HUhjtwxvtQp8e6ny/95kJQN4KY7ZcaJrQjJlPKL1FA=="],
+    "bun-plugin-dtsx": ["bun-plugin-dtsx@0.9.11", "", { "dependencies": { "@stacksjs/dtsx": "0.9.11" } }, "sha512-guIzQrrkZTKsy6oAn0iKSiWdKQ3uzWvVOOjJjOHDfhTremB5xrVHnzPjnj3MTtCOm2mvVYUzm1yU6H0uUAe7Mw=="],
 
     "bun-types": ["bun-types@1.3.9", "", { "dependencies": { "@types/node": "*" } }, "sha512-+UBWWOakIP4Tswh0Bt0QD0alpTY8cb5hvgiYeWCMet9YukHbzuruIEeXC2D7nMJPB12kbh8C7XJykSexEqGKJg=="],
 
