@@ -110,7 +110,14 @@ jobs:
             HOUR=$(date -u +%-H)
 
             # Rebase check: every 20 minutes (minute 0, 20, or 40)
-            if [ $((MINUTE % 20)) -lt 5 ]; then
+            # Skip check at top of even hours when update job runs, to avoid
+            # the check job auto-closing PRs that update just created.
+            IS_UPDATE_TIME=false
+            if [ "$MINUTE" -lt 5 ] && [ $((HOUR % 2)) -eq 0 ]; then
+              IS_UPDATE_TIME=true
+            fi
+
+            if [ $((MINUTE % 20)) -lt 5 ] && [ "$IS_UPDATE_TIME" = "false" ]; then
               echo "run_check=true" >> $GITHUB_OUTPUT
             fi
 
