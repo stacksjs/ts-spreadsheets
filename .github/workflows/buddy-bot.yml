@@ -102,12 +102,25 @@ jobs:
               echo "run_dashboard=true" >> $GITHUB_OUTPUT
             fi
           elif [ "${{ github.event_name }}" = "schedule" ]; then
-            # Determine based on cron schedule
-            if [ "${{ github.event.schedule }}" = "*/20 * * * *" ]; then
+            # Use current UTC time to determine which jobs to run.
+            # github.event.schedule is unreliable when multiple cron schedules
+            # overlap (e.g. */20 and 0 */2 both fire at :00) — GitHub picks one
+            # arbitrarily, causing jobs to be skipped.
+            MINUTE=$(date -u +%-M)
+            HOUR=$(date -u +%-H)
+
+            # Rebase check: every 20 minutes (minute 0, 20, or 40)
+            if [ $((MINUTE % 20)) -lt 5 ]; then
               echo "run_check=true" >> $GITHUB_OUTPUT
-            elif [ "${{ github.event.schedule }}" = "0 */2 * * *" ]; then
+            fi
+
+            # Dependency updates: top of every even hour
+            if [ "$MINUTE" -lt 5 ] && [ $((HOUR % 2)) -eq 0 ]; then
               echo "run_update=true" >> $GITHUB_OUTPUT
-            elif [ "${{ github.event.schedule }}" = "15 */2 * * *" ]; then
+            fi
+
+            # Dashboard updates: ~15 minutes after dependency updates
+            if [ "$MINUTE" -ge 10 ] && [ "$MINUTE" -lt 25 ] && [ $((HOUR % 2)) -eq 0 ]; then
               echo "run_dashboard=true" >> $GITHUB_OUTPUT
             fi
           fi
