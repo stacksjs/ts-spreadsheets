@@ -23,7 +23,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
 
       - name: Setup Pantry
-        uses: home-lang/pantry-setup@v1
+        uses: home-lang/pantry/packages/action@main
 
       - name: Install Dependencies
         run: bun install
