@@ -2,7 +2,7 @@
 
 ## About
 
-Easily generate spreadsheets, like CSVs and Excel files.
+A TypeScript library and CLI for generating, converting, and manipulating CSV and Excel spreadsheets. It provides a fluent API via `createSpreadsheet()` and `spreadsheet()` functions to generate content, store files to disk, or create download Response objects. The CLI supports creating spreadsheets from JSON input, converting between CSV and Excel formats, and validating input. The library is dependency-free, fully typed, and performant.
 
 ## Linting
 
