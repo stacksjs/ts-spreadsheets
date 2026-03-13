@@ -1,5 +1,9 @@
 # Claude Code Guidelines
 
+## About
+
+Easily generate spreadsheets, like CSVs and Excel files.
+
 ## Linting
 
 - Use **pickier** for linting — never use eslint directly
@@ -9,7 +13,7 @@
 ## Frontend
 
 - Use **stx** for templating — never write vanilla JS (`var`, `document.*`, `window.*`) in stx templates
-- Use **crosswind** as the default CSS framework
+- Use **crosswind** as the default CSS framework which enables standard Tailwind-like utility classes
 - stx `<script>` tags should only contain stx-compatible code (signals, composables, directives)
 
 ## Dependencies
