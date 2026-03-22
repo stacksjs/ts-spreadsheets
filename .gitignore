@@ -12,3 +12,5 @@ temp
 docs/.vitepress/cache
 bin/spreadsheets
 invalid.json
+.zed
+.cursor
