@@ -160,4 +160,4 @@ await spreadsheet(data).store('output.xlsx')
 await spreadsheet(data).generateExcel().store('output.xlsx')
 ```
 
-To view the full documentation, please visit [https://stacksjs.org/docs/ts-spreadsheets](https://stacksjs.org/docs/ts-spreadsheets).
+To view the full documentation, please visit [<https://stacksjs.org/docs/ts-spreadsheet>s](https://stacksjs.org/docs/ts-spreadsheets).

@@ -54,7 +54,6 @@
 
 ## ...main
 
-
 ### 🏡 Chore
 
 - Initial commit ([6a51579](https://github.com/stacksjs/ts-starter/commit/6a51579))

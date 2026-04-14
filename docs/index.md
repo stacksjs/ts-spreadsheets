@@ -28,5 +28,3 @@ features:
     icon: 🏗️
     details: "Written in and for TypeScript, with full type support."
 ---
-
-<Home />

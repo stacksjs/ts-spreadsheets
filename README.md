@@ -190,7 +190,7 @@ await spreadsheet(data).store('output.xlsx')
 await spreadsheet(data).generateExcel().store('output.xlsx')
 ```
 
-To view the full documentation, please visit [https://ts-spreadsheets.netlify.app](https://ts-spreadsheets.netlify.app).
+To view the full documentation, please visit [<https://ts-spreadsheets.netlify.ap>p](https://ts-spreadsheets.netlify.app).
 
 ### CLI
 
