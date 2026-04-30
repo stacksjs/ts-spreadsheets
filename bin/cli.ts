@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import process from 'node:process'
-import { CAC } from 'cac'
+import { CLI as CAC } from '@stacksjs/clapp'
 import { type Content, createSpreadsheet, csvToContent } from '../src/index'
 
 // Use sync version for version to avoid race conditions
