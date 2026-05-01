@@ -293,4 +293,3 @@ Made with 💙
 <!-- Badges -->
 
 <!-- [codecov-src]: https://img.shields.io/codecov/c/gh/stacksjs/ts-starter/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/stacksjs/ts-starter -->
