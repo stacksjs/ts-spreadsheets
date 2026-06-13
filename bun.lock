@@ -5,7 +5,7 @@
     "": {
       "name": "ts-spreadsheets",
       "devDependencies": {
-        "@stacksjs/clapp": "^0.2.0",
+        "@stacksjs/clapp": "^0.2.10",
         "better-dx": "^0.2.15",
       },
     },
