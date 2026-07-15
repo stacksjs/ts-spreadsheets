@@ -1,7 +1,8 @@
 {
   "name": "ts-spreadsheets",
   "type": "module",
-  "version": "0.2.0",
+  "sideEffects": false,
+  "version": "0.2.1",
   "description": "Easily generate spreadsheets, like CSVs and Excel files.",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
@@ -25,23 +26,22 @@
   ],
   "exports": {
     ".": {
-      "bun": "./src/index.ts",
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "bun": "./dist/src/index.js",
+      "import": "./dist/src/index.js"
     },
     "./*": {
-      "bun": "./src/*",
+      "bun": "./dist/*",
       "import": "./dist/*"
     }
   },
-  "module": "./dist/index.js",
+  "module": "./dist/src/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
     "spreadsheets": "./dist/bin/cli.js"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "scripts": {
     "build": "bun build.ts && bun run compile",
