@@ -1,3 +1,21 @@
+[Compare changes](https://github.com/stacksjs/ts-spreadsheets/compare/v0.2.1...v0.2.2)
+
+## 🐛 Bug Fixes
+
+- drop `sideEffects: false` before it miscompiles the entrypoint ([dcf0bc6](https://github.com/stacksjs/ts-spreadsheets/commit/dcf0bc6)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## 📚 Documentation
+
+- link the community as stacksjs.com/discord ([605f0e4](https://github.com/stacksjs/ts-spreadsheets/commit/605f0e4)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## 🧹 Chores
+
+- release v0.2.2 ([43dc713](https://github.com/stacksjs/ts-spreadsheets/commit/43dc713)) _(by Chris <chrisbreuer93@gmail.com>)_
+- **deps**: declare bun ^1.3.14 in deps.yaml ([6fc0627](https://github.com/stacksjs/ts-spreadsheets/commit/6fc0627)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
 
 ## v0.1.2...main
 
