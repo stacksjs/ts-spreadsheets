@@ -1,7 +1,6 @@
 {
   "name": "ts-spreadsheets",
   "type": "module",
-  "sideEffects": false,
   "version": "0.2.1",
   "description": "Easily generate spreadsheets, like CSVs and Excel files.",
   "author": "Chris Breuer <chris@stacksjs.org>",
