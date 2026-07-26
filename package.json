@@ -29,7 +29,11 @@
       "bun": "./dist/src/index.js",
       "import": "./dist/src/index.js"
     },
+    "./types": {
+      "types": "./dist/types.d.ts"
+    },
     "./*": {
+      "types": "./dist/*.d.ts",
       "bun": "./dist/*",
       "import": "./dist/*"
     }
