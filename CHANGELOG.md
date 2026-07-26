@@ -1,3 +1,18 @@
+[Compare changes](https://github.com/stacksjs/ts-spreadsheets/compare/v0.2.2...v0.2.3)
+
+## 🐛 Bug Fixes
+
+- **pkg**: give subpath imports their type declarations ([7a645b9](https://github.com/stacksjs/ts-spreadsheets/commit/7a645b9)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## 🧹 Chores
+
+- release v0.2.3 ([53e7b0d](https://github.com/stacksjs/ts-spreadsheets/commit/53e7b0d)) _(by Chris <chrisbreuer93@gmail.com>)_
+- **release**: add a non-interactive release:patch script ([88feaf7](https://github.com/stacksjs/ts-spreadsheets/commit/88feaf7)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
+
 [Compare changes](https://github.com/stacksjs/ts-spreadsheets/compare/v0.2.1...v0.2.2)
 
 ## 🐛 Bug Fixes
