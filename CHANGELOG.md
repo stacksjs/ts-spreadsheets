@@ -1,3 +1,17 @@
+[Compare changes](https://github.com/stacksjs/ts-spreadsheets/compare/v0.2.4...v0.2.5)
+
+## 🐛 Bug Fixes
+
+- **csv**: defuse a formula before a spreadsheet runs it ([d78b2f8](https://github.com/stacksjs/ts-spreadsheets/commit/d78b2f8)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## 🧹 Chores
+
+- release v0.2.5 ([31d91f7](https://github.com/stacksjs/ts-spreadsheets/commit/31d91f7)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
+
 [Compare changes](https://github.com/stacksjs/ts-spreadsheets/compare/v0.2.3...v0.2.4)
 
 ## 🐛 Bug Fixes
