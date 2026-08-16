@@ -552,3 +552,26 @@ describe('the xlsx is a workbook a reader can open', () => {
     expect(csv).toBe('First\nA\none\n\nSecond\nB\ntwo')
   })
 })
+
+describe('a formula in a cell cannot run when the file is opened', () => {
+  it('defuses the four characters a spreadsheet treats as a formula', () => {
+    const csv = spreadsheet({
+      headings: ['Name'],
+      data: [['=1+1'], ['+1'], ['-1'], ['@SUM(A1)'], ['safe']],
+    }).csv().getContent() as string
+
+    // Tab-prefixed and therefore quoted, so the cell is text and says the same
+    // thing. `safe` is untouched: this must not quote every cell in the file.
+    expect(csv).toBe('Name\n"\t=1+1"\n"\t+1"\n"\t-1"\n"\t@SUM(A1)"\nsafe')
+  })
+
+  it('agrees with the PHP sibling byte for byte', () => {
+    // stacksjs/php-spreadsheets prefixes then quotes in exactly this order.
+    // The two write the same product's exports and a customer moving between
+    // them should not get a different file.
+    const csv = spreadsheet({ headings: ['A'], data: [['=HYPERLINK("http://x")']] })
+      .csv().getContent() as string
+
+    expect(csv).toBe('A\n"\t=HYPERLINK(""http://x"")"')
+  })
+})
