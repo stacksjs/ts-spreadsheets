@@ -1,3 +1,17 @@
+[Compare changes](https://github.com/stacksjs/ts-spreadsheets/compare/v0.2.3...v0.2.4)
+
+## 🐛 Bug Fixes
+
+- **excel**: write a workbook a spreadsheet can actually open ([ed4d45a](https://github.com/stacksjs/ts-spreadsheets/commit/ed4d45a)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## 🧹 Chores
+
+- release v0.2.4 ([27d2204](https://github.com/stacksjs/ts-spreadsheets/commit/27d2204)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
+
 [Compare changes](https://github.com/stacksjs/ts-spreadsheets/compare/v0.2.2...v0.2.3)
 
 ## 🐛 Bug Fixes
